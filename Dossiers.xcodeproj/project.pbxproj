@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F7DD768B1D81EC0200ABAA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD768A1D81EC0200ABAA2F /* AppDelegate.swift */; };
-		F7DD768D1D81EC0200ABAA2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD768C1D81EC0200ABAA2F /* ViewController.swift */; };
+		F7DD768D1D81EC0200ABAA2F /* OrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD768C1D81EC0200ABAA2F /* OrganizationViewController.swift */; };
 		F7DD76901D81EC0200ABAA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD768E1D81EC0200ABAA2F /* Main.storyboard */; };
 		F7DD76921D81EC0200ABAA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DD76911D81EC0200ABAA2F /* Assets.xcassets */; };
 		F7DD76951D81EC0200ABAA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD76931D81EC0200ABAA2F /* LaunchScreen.storyboard */; };
 		F7DD76A01D81EC0200ABAA2F /* DossiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD769F1D81EC0200ABAA2F /* DossiersTests.swift */; };
 		F7DD76AB1D81EC0200ABAA2F /* DossiersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD76AA1D81EC0200ABAA2F /* DossiersUITests.swift */; };
+		F7DD76B91D81EC4000ABAA2F /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD76B81D81EC4000ABAA2F /* CustomClasses.swift */; };
+		F7DD76BB1D81EC8900ABAA2F /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD76BA1D81EC8900ABAA2F /* Organization.swift */; };
+		F7E966B11D82017B009ED26D /* DossierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E966B01D82017B009ED26D /* DossierViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		F7DD76871D81EC0200ABAA2F /* Dossiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dossiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DD768A1D81EC0200ABAA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7DD768C1D81EC0200ABAA2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DD768C1D81EC0200ABAA2F /* OrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewController.swift; sourceTree = "<group>"; };
 		F7DD768F1D81EC0200ABAA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DD76911D81EC0200ABAA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DD76941D81EC0200ABAA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		F7DD76A61D81EC0200ABAA2F /* DossiersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DossiersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DD76AA1D81EC0200ABAA2F /* DossiersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DossiersUITests.swift; sourceTree = "<group>"; };
 		F7DD76AC1D81EC0200ABAA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DD76B81D81EC4000ABAA2F /* CustomClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomClasses.swift; path = ../CustomClasses.swift; sourceTree = "<group>"; };
+		F7DD76BA1D81EC8900ABAA2F /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = ../Organization.swift; sourceTree = "<group>"; };
+		F7E966B01D82017B009ED26D /* DossierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DossierViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		F7DD76891D81EC0200ABAA2F /* Dossiers */ = {
 			isa = PBXGroup;
 			children = (
+				F7DD76BA1D81EC8900ABAA2F /* Organization.swift */,
+				F7DD76B81D81EC4000ABAA2F /* CustomClasses.swift */,
 				F7DD768A1D81EC0200ABAA2F /* AppDelegate.swift */,
-				F7DD768C1D81EC0200ABAA2F /* ViewController.swift */,
+				F7DD768C1D81EC0200ABAA2F /* OrganizationViewController.swift */,
 				F7DD768E1D81EC0200ABAA2F /* Main.storyboard */,
+				F7E966B01D82017B009ED26D /* DossierViewController.swift */,
 				F7DD76911D81EC0200ABAA2F /* Assets.xcassets */,
 				F7DD76931D81EC0200ABAA2F /* LaunchScreen.storyboard */,
 				F7DD76961D81EC0200ABAA2F /* Info.plist */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DD768D1D81EC0200ABAA2F /* ViewController.swift in Sources */,
+				F7E966B11D82017B009ED26D /* DossierViewController.swift in Sources */,
+				F7DD768D1D81EC0200ABAA2F /* OrganizationViewController.swift in Sources */,
 				F7DD768B1D81EC0200ABAA2F /* AppDelegate.swift in Sources */,
+				F7DD76BB1D81EC8900ABAA2F /* Organization.swift in Sources */,
+				F7DD76B91D81EC4000ABAA2F /* CustomClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +524,7 @@
 				F7DD76B11D81EC0200ABAA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7DD76B21D81EC0200ABAA2F /* Build configuration list for PBXNativeTarget "DossiersTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				F7DD76B41D81EC0200ABAA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7DD76B51D81EC0200ABAA2F /* Build configuration list for PBXNativeTarget "DossiersUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				F7DD76B71D81EC0200ABAA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

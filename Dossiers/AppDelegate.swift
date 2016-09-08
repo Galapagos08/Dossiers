@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let agentJamesBond = Dossier(name: "James Bond", lastKnownLocation: "London", knownAssociates: ["Q", "Moneypenney"], occupation: "British Secret Service", languagesSpoken: ["English"])
+        
+        
+        let agentCoulson = Dossier(name: "Phil Coulson", lastKnownLocation: "S.H.I.E.L.D. Headquarters", knownAssociates: ["Nick Fury", "Iron Man"], occupation: "S.H.I.E.L.D. Agent", languagesSpoken: ["English"])
+        
+        let agentBristow = Dossier(name: "Sydney Bristow", lastKnownLocation: "Los Angeles", knownAssociates: ["Michael Vaughn", "Will Tippin"], occupation: "CIA Agent", languagesSpoken: ["English"])
+       
+        let operatives = [agentJamesBond, agentCoulson, agentBristow]
+        
+        let organization = Organization(name: "Good Guys", operatives: operatives)
+        
         return true
     }
 
