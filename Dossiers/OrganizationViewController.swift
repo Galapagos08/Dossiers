@@ -19,14 +19,17 @@ class OrganizationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = organization?.name
+        
+        button1.setTitle((organization?.operatives)![0].name, for: .normal)
+        button2.setTitle((organization?.operatives)![1].name, for: .normal)
+        button3.setTitle((organization?.operatives)![2].name, for: .normal)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    var titleView: UIView? {
-        title = organization?.name
-    return self.titleView
-    }
+    
+    
+    
 }
 
