@@ -18,25 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmE-5F-FcU">
-                                <frame key="frameInset" minX="59" minY="318" width="46" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzF-bk-ogb">
-                                <frame key="frameInset" minX="164" minY="318" width="46" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYp-Gj-0Dz">
-                                <frame key="frameInset" minX="274" minY="318" width="46" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c2V-xa-bMh">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmE-5F-FcU">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="sRh-dk-WdC" kind="show" id="MHu-YD-WUC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzF-bk-ogb">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="sRh-dk-WdC" kind="show" id="I9b-GV-6en"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYp-Gj-0Dz">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="sRh-dk-WdC" kind="show" id="Bn8-63-JeA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWr-bM-BsK">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c2V-xa-bMh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BKa-gi-T9Y"/>
+                            <constraint firstItem="c2V-xa-bMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qw6-tf-WaT"/>
+                            <constraint firstItem="mWr-bM-BsK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="r9j-29-rNb"/>
+                            <constraint firstItem="mWr-bM-BsK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="so6-0t-Cc8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yq8-bn-cpq"/>
+                    <connections>
+                        <outlet property="button1" destination="UmE-5F-FcU" id="67s-k1-uV7"/>
+                        <outlet property="button2" destination="QzF-bk-ogb" id="Huk-d3-GQn"/>
+                        <outlet property="button3" destination="zYp-Gj-0Dz" id="Utk-oC-xif"/>
+                        <outlet property="organizationLabel" destination="mWr-bM-BsK" id="tmq-hp-sL9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,4 +103,7 @@
             <point key="canvasLocation" x="89" y="37"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MHu-YD-WUC"/>
+    </inferredMetricsTieBreakers>
 </document>

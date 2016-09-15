@@ -9,17 +9,24 @@
 import UIKit
 
 class OrganizationViewController: UIViewController {
-
+ 
+    @IBOutlet var organizationLabel: UILabel!
+    @IBOutlet var button3: UIButton!
+    @IBOutlet var button2: UIButton!
+    @IBOutlet var button1: UIButton!
+    var organization: Organization?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        title = organization?.name
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    var titleView: UIView? {
+        title = organization?.name
+    return self.titleView
+    }
 }
 
