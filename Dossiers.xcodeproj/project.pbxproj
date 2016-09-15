@@ -104,9 +104,9 @@
 				F7DD76B81D81EC4000ABAA2F /* CustomClasses.swift */,
 				F7DD768A1D81EC0200ABAA2F /* AppDelegate.swift */,
 				F7DD768C1D81EC0200ABAA2F /* OrganizationViewController.swift */,
-				F7DD768E1D81EC0200ABAA2F /* Main.storyboard */,
 				F7E966B01D82017B009ED26D /* DossierViewController.swift */,
 				F7DD76911D81EC0200ABAA2F /* Assets.xcassets */,
+				F7DD768E1D81EC0200ABAA2F /* Main.storyboard */,
 				F7DD76931D81EC0200ABAA2F /* LaunchScreen.storyboard */,
 				F7DD76961D81EC0200ABAA2F /* Info.plist */,
 			);
