@@ -11,11 +11,11 @@ import Foundation
 class Dossier {
     let name: String
     var lastKnownLocation: String?
-    var knownAssociates: Array<String>?
+    var knownAssociates: String?
     var occupation: String
-    var languagesSpoken: Array<String>?
+    var languagesSpoken: String?
     
-    init(name: String, lastKnownLocation: String?, knownAssociates: Array<String>?, occupation: String, languagesSpoken: Array<String>?) {
+    init(name: String, lastKnownLocation: String?, knownAssociates: String?, occupation: String, languagesSpoken: String?) {
         self.name = name
         self.lastKnownLocation = lastKnownLocation
         self.knownAssociates = knownAssociates

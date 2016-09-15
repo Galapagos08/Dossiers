@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let agentBond = Dossier(name: "James Bond", lastKnownLocation: "London", knownAssociates: ["Q", "Moneypenney", "Felix Leiter"], occupation: "British Secret Service", languagesSpoken: ["English"])
+        let agentBond = Dossier(name: "James Bond", lastKnownLocation: "London", knownAssociates: "Q, Moneypenney, Felix Leiter", occupation: "British Secret Service", languagesSpoken: "English")
         
         
-        let agentCoulson = Dossier(name: "Phil Coulson", lastKnownLocation: "S.H.I.E.L.D. Headquarters", knownAssociates: ["Nick Fury", "Iron Man"], occupation: "S.H.I.E.L.D. Agent", languagesSpoken: ["English"])
+        let agentCoulson = Dossier(name: "Phil Coulson", lastKnownLocation: "S.H.I.E.L.D. Headquarters", knownAssociates: "Nick Fury, Iron Man", occupation: "S.H.I.E.L.D. Agent", languagesSpoken: "English")
         
-        let agentBristow = Dossier(name: "Sydney Bristow", lastKnownLocation: "Los Angeles", knownAssociates: ["Michael Vaughn", "Will Tippin"], occupation: "CIA Agent", languagesSpoken: ["English"])
+        let agentBristow = Dossier(name: "Sydney Bristow", lastKnownLocation: "Los Angeles", knownAssociates: "Michael Vaughn, Will Tippin", occupation: "CIA Agent", languagesSpoken: "English")
        
         let operatives = [agentBond, agentCoulson, agentBristow]
         

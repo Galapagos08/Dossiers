@@ -22,9 +22,9 @@ class DossierViewController: UIViewController {
         title = agent?.name
         self.nameField.text = agent?.name
         self.locationField.text = agent?.lastKnownLocation
-        self.associatesField.text = ""//agent?.knownAssociates
+        self.associatesField.text = agent?.knownAssociates
         self.occupationField.text = agent?.occupation
-        self.languagesField.text = ""//agent?.languagesSpoken
+        self.languagesField.text = agent?.languagesSpoken
      }
     
     
